@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+  <title></title>
+
+  <link rel="manifest" href="manifest.json">
+
+  <!-- un-comment this code to enable service worker
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js')
+        .then(() => console.log('service worker installed'))
+        .catch(err => console.log('Error', err));
+    }
+  </script>-->
+
+  <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+  <link href="css/ionic.app.css" rel="stylesheet">
+  -->
+
+  <!-- ionic/angularjs js -->
+  <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+  <!-- cordova script (this will be a 404 during development) -->
+  <script src="cordova.js"></script>
+
+  <!-- your app's js -->
+  <script src="js/app.js"></script>
+  <script src="js/controllers.js"></script>
+  <script src="js/services.js"></script>
+</head>
+<body ng-app="starter">
+<!--顶部-->
+<ion-header-bar align-title="left" class="bar-dark">
+  <div class="h1 title">微信</div>
+  <div class="buttons">
+    <button class="button no-animation button-icon icon ion-android-search"></button>
+    <button class="button no-animation button-icon icon ion-android-add"></button>
+  </div>
+</ion-header-bar>
+<!--内容-->
+<div style="overflow-y: auto" class="scroll-content has-header has-footer">
+  <ul class="list">
+    <li class="item item-divider">
+      <h1></h1>
+    </li>
+    <li class="item item-thumbnail-left item-icon-right">
+      <img class="photos" src="img/naruto&hinata.jpg">
+      <p id="user">自由</p>
+      <i class="icon ion-android-apps"></i>
+    </li>
+    <li class="item item-divider">
+      <h1></h1>
+    </li>
+    <li class="item item-avatar-left">
+      <img class="photos" src="img/xiangce.jpg" alt="">
+      <h2 class="users">相册</h2>
+    </li>
+    <li class="item item-avatar-left">
+      <img class="photos" src="img/shoucang.jpg" alt="">
+      <h2 class="users">收藏</h2>
+    </li>
+    <li class="item item-divider">
+      <h1></h1>
+    </li>
+    <li class="item item-avatar-left">
+      <img class="photos" src="img/qianbao.jpg" alt="">
+      <h2 class="users">钱包</h2>
+    <li class="item item-divider">
+      <h1></h1>
+    </li>
+    <li class="item item-avatar-left">
+      <img class="photos" src="img/biaoqing.jpg" alt="">
+      <h2 class="users">表情</h2>
+    <li class="item item-divider">
+      <h1></h1>
+    </li>
+    <li class="item item-avatar-left">
+      <img class="photos" src="img/shezhi.jpg" alt="">
+      <h2 class="users">设置</h2>
+    <li class="item item-divider">
+      <h1></h1>
+      <h1></h1>
+      <h1></h1>
+      <h1></h1>
+      <h1></h1>
+      <h1></h1>
+      <h1></h1>
+      <h1></h1>
+      <h1></h1>
+      <h1></h1>
+      <h1></h1>
+      <h1></h1>
+      <h1></h1>
+      <h1></h1>
+      <h1></h1>
+      <h1></h1>
+      <h1></h1>
+      <h1></h1>
+      <h1></h1>
+      <h1></h1>
+      <h1></h1>
+      <h1></h1>
+      <h1></h1>
+      <h1></h1>
+      <h1></h1>
+      <h1></h1>
+      <h1></h1>
+      <h1></h1>
+      <h1></h1>
+      <h1></h1>
+    </li>
+  </ul>
+</div>
+<!--tabs底部-->
+<div class="tabs tabs-icon-top tabs-striped">
+  <a href="index.html" class="tab-item">
+    <i class="icon ion-chatbubble"></i>
+    微信
+  </a>
+  <a href="friends.html" class="tab-item">
+    <i class="icon ion-android-people"></i>
+    通讯录
+  </a>
+  <a href="find.html" class="tab-item has-badge">
+    <div class="badge badge-assertive activeted">1</div>
+    <i class="icon ion-android-compass"></i>
+    发现
+  </a>
+  <a href="index.html" class="tab-item">
+    <i class="icon ion-person balanced"></i>
+    <p class="balanced">我</p>
+  </a>
+</div>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+  <title></title>
+
+  <link rel="manifest" href="manifest.json">
+
+  <!-- un-comment this code to enable service worker
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js')
+        .then(() => console.log('service worker installed'))
+        .catch(err => console.log('Error', err));
+    }
+  </script>-->
+
+  <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+  <link href="css/ionic.app.css" rel="stylesheet">
+  -->
+
+  <!-- ionic/angularjs js -->
+  <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+  <!-- cordova script (this will be a 404 during development) -->
+  <script src="cordova.js"></script>
+
+  <!-- your app's js -->
+  <script src="js/app.js"></script>
+  <script src="js/controllers.js"></script>
+  <script src="js/services.js"></script>
+</head>
+<body ng-app="starter">
+<!--顶部-->
+<ion-header-bar align-title="left" class="bar-dark">
+  <div class="buttons">
+    <a href="find.html">
+      <button class="button no-animation button-icon icon ion-android-arrow-back"></button>
+    </a>
+  </div>
+  <div class="h1 title">朋友圈</div>
+  <div class="buttons">
+    <button class="button no-animation button-icon icon ion-android-camera"></button>
+  </div>
+</ion-header-bar>
+<!--内容-->
+<div style="overflow-y: auto" class="scroll-content has-header">
+  <div id="photos-00" class="item item-image">
+    <img src="img/00.jpg" alt="">
+  </div>
+    <p id="users">自由</p>
+    <img id="photos-01" src="img/naruto&hinata.jpg" alt="">
+  <ul class="list" id="content">
+    <li class="item item-thumbnail-left item-icon-right">
+      <img src="img/naruto.jpeg">
+      <h2>漩涡鸣人</h2>
+      <p>第七代火影</p>
+      <span class="rj-push-right">11:11</span>
+    </li>
+    <li class="item item-thumbnail-left">
+      <img src="img/boruto.jpg">
+      <h2>漩涡博人</h2>
+      <p>儿砸</p>
+      <span class="rj-push-right">11:11</span>
+    </li>
+    <li class="item item-thumbnail-left">
+      <img src="img/himawari.jpg">
+      <h2>漩涡向日葵</h2>
+      <p>闺女</p>
+      <span class="rj-push-right">11:11</span>
+    </li>
+    <li class="item item-thumbnail-left">
+      <img src="img/hinata.jpg">
+      <h2>漩涡雏田</h2>
+      <p>媳妇</p>
+      <span class="rj-push-right">11:11</span>
+    </li>
+  </ul>
+</div>
+</body>
+</html>
